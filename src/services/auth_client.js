@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-	baseURL: "https://fledgejobs.vercel.app/auth",
+	baseURL: "https://fledge-jobs-server.vercel.app/auth",
 });
