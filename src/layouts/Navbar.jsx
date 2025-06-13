@@ -167,6 +167,14 @@ const Navbar = () => {
 							</li>
 						</ul>
 					</li>
+					<li>
+						<NavLink
+							to="/upgrade"
+							className="px-2 py-1 rounded hover:text-primary"
+						>
+							Pricing
+						</NavLink>
+					</li>
 				</ul>
 				{/* Buttons | Positioned Right */}
 				{user ? (

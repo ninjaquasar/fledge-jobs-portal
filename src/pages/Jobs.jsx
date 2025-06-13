@@ -9,7 +9,9 @@ const Jobs = () => {
 	}, []);
 	return (
 		<main className="pt-8">
-			<h2 className="text-4xl font-bold text-center mb-12">Open Job Opportunities</h2>
+			<h2 className="text-4xl font-bold text-center mb-12">
+				Open Job <span className="text-primary">Opportunities</span>
+			</h2>
 			{/* Jobs List */}
 			<div className="flex flex-col gap-y-4 px-60">
 				{jobs.map((job) => (

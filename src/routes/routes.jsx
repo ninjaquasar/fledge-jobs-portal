@@ -8,6 +8,7 @@ import PrivateRoute from "../pages/PrivateRoute";
 import Categories from "../pages/Categories";
 import Profile from "../pages/Profile";
 import Jobs from "../pages/Jobs";
+import Pricing from "../pages/Pricing";
 
 const router = createBrowserRouter([
 	{
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
 			{
 				path: "/jobs",
 				Component: Jobs,
+			},
+			{
+				path: "/upgrade",
+				Component: Pricing,
 			},
 		],
 	},
