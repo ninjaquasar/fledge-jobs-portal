@@ -5,7 +5,7 @@ import CategoryCard from "../components/CategoryCard";
 const Categories = () => {
 	const [categories, setCategories] = useState([]);
 	useEffect(() => {
-		apiClient.get("/categories/").then((response) => setCategories(response.data.data));
+		apiClient.get("/categories/").then((res) => setCategories(res.data.data));
 	}, []);
 	return (
 		<main className="py-12">

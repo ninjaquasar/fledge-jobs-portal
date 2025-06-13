@@ -5,25 +5,25 @@ import Coin from "../assets/coin.png";
 const ProfileCard = () => {
 	const { user } = useAuthContext();
 	return (
-		<section className="lg:mx-60 2xl:mx-96 p-8 bg-light rounded-4xl drop-shadow-[0_0_1.5rem_#bbb]">
+		<section className="max-w-2xl mx-auto p-8 bg-light rounded-4xl drop-shadow-[0_0_1.5rem_#bbb]">
 			<div className="w-fit mx-auto flex items-center gap-x-6 mb-4">
 				<img
-					src="https://i.pinimg.com/474x/a0/22/80/a02280bc7edd3e553dc5425992aada9d.jpg"
-					alt="Display Picture"
-					className="size-24 rounded-full object-cover object-center"
+					src="https://cdn-icons-png.flaticon.com/128/9187/9187604.png"
+					alt="User Picture"
+					className="size-20 rounded-full object-cover object-center"
 				/>
 				<h2 className="text-4xl font-bold tracking-wide">
 					{user?.first_name} {user?.last_name[0]}.
 				</h2>
 			</div>
-			<p className="text-slate-600 flex justify-end items-center gap-x-2 mb-8">
+			<p className="text-slate-600 flex justify-end items-center gap-x-2 mb-8 text-sm">
 				<img
 					src={Coin}
 					className="size-3"
 				/>
 				means 1000 FledgeCoins needed to edit
 			</p>
-			<div className="w-7/12 2xl:w-2/5 mx-auto space-y-4">
+			<div className="w-4/5 2xl:w-3/4 mx-auto space-y-4">
 				<label className="flex flex-col gap-y-2">
 					<span className="pl-2 text-slate-700 text-xl font-medium">First Name</span>
 					<input

@@ -7,6 +7,7 @@ import Dashboard from "../pages/Dashboard";
 import PrivateRoute from "../pages/PrivateRoute";
 import Categories from "../pages/Categories";
 import Profile from "../pages/Profile";
+import Jobs from "../pages/Jobs";
 
 const router = createBrowserRouter([
 	{
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
 			{
 				path: "/categories",
 				Component: Categories,
+			},
+			{
+				path: "/jobs",
+				Component: Jobs,
 			},
 		],
 	},
